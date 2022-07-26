@@ -15,7 +15,7 @@
     <main>
       <nav class="navbar navbar-expand-md bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand d-none d-md-block" href="#">Navbar</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -30,9 +30,11 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">Program</a>
+              <a class="nav-link" href="#">Join</a>
+              <a class="nav-link" href="#">Sponsor</a>
+              <a class="nav-link" href="#">News</a>
             </div>
           </div>
         </div>
@@ -58,8 +60,9 @@
       </section>
       <!-- Programmation Section -->
       <section id="program" class="bg-dark">
-        <div class="container d-flex flex-column gap-2">
-          <div class="program-card text-light mt-3">
+        <h1 class="text-center text-light pt-4">Main Program</h1>
+        <div class="container flex-wrap d-flex flex-md-row flex-column gap-2">
+          <div class="program-card d-flex flex-md-column text-light mt-3">
             <i class="bi bi-chat-right-text"></i>
             <h2 class="text-primary">Lecture</h2>
             <p>
@@ -67,15 +70,15 @@
               of sharing and opening
             </p>
           </div>
-          <div class="program-card text-light">
+          <div class="program-card d-flex flex-md-column text-light">
             <i class="bi bi-easel"></i>
-            <h2 class="text-primary">CC Exhibition</h2>
+            <h2 class="text-primary">Exhibition</h2>
             <p>
               Appreciate various creations applying CC license of artirts,
               organized from Art Center Nabi.
             </p>
           </div>
-          <div class="program-card text-light">
+          <div class="program-card d-flex flex-md-column text-light">
             <i class="bi bi-chat-right-text"></i>
             <h2 class="text-primary">Forum</h2>
             <p>
@@ -83,7 +86,7 @@
               each topic
             </p>
           </div>
-          <div class="program-card text-light">
+          <div class="program-card d-flex flex-md-column text-light">
             <i class="bi bi-box2-heart"></i>
             <h2 class="text-primary">Workshop</h2>
             <p>
@@ -91,7 +94,7 @@
               just watching
             </p>
           </div>
-          <div class="program-card text-light mb-3">
+          <div class="program-card d-flex flex-md-column text-light">
             <i class="bi bi-graph-up-arrow"></i>
             <h2 class="text-primary">CC Ignite</h2>
             <p>
@@ -107,115 +110,118 @@
         </div>
       </section>
       <!-- Featured Speakers Section -->
-      <section id="speakers">
+      <section id="speakers" class="pb-4">
         <div class="container d-flex flex-column gap-3">
           <h2 class="display-5 fw-bold text-center my-3">Featured Speakers</h2>
-          <div class="d-flex">
-            <img
-              class=""
-              src="/images/speakers-pics/checkered-blonde-man.png"
-              alt="Yochai"
-            />
-            <div class="ms-2">
-              <h2 class="fw-bold">Yochai Benkler</h2>
-              <p class="text-primary fst-italic">
-                Berkman Professor of Entrepreneurial Legal Studies at Harvard
-                Law School
-              </p>
-              <p>
-                Benkler studies commons-based peer production, and published his
-                seminal book The Wealth of Networks in 2006.
-              </p>
+          <div class="speaker-card-wrapper">
+            <div class="d-flex">
+              <img
+                class="me-3"
+                src="/images/speakers-pics/checkered-blonde-man.png"
+                alt="Yochai"
+              />
+              <div class="ms-2">
+                <h2 class="fw-bold">Yochai Benkler</h2>
+                <p class="text-primary fst-italic">
+                  Berkman Professor of Entrepreneurial Legal Studies at Harvard
+                  Law School
+                </p>
+                <p>
+                  Benkler studies commons-based peer production, and published
+                  his seminal book The Wealth of Networks in 2006.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="d-flex">
-            <img
-              class=""
-              src="/images/speakers-pics/checkered-business-woman-1.png"
-              alt="Yochai"
-            />
-            <div class="ms-2">
-              <h2 class="fw-bold">SohYeong Noh</h2>
-              <p class="text-primary fst-italic">
-                Director of Art Centre Nabi and a board member of CC Korea
-              </p>
-              <p>
-                As the Main venue for new media art production in Korea, Nabi
-                promotes cross-disciplinary collaboration and understanding
-                among science technology, humanities, and the arts.
-              </p>
+            <div class="d-flex">
+              <img
+                class="me-3"
+                src="/images/speakers-pics/checkered-business-woman-1.png"
+                alt="Yochai"
+              />
+              <div class="ms-2">
+                <h2 class="fw-bold">SohYeong Noh</h2>
+                <p class="text-primary fst-italic">
+                  Director of Art Centre Nabi and a board member of CC Korea
+                </p>
+                <p>
+                  As the Main venue for new media art production in Korea, Nabi
+                  promotes cross-disciplinary collaboration and understanding
+                  among science technology, humanities, and the arts.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="d-flex">
-            <img
-              class=""
-              src="/images/speakers-pics/checkered_business-hindi-man-1.png"
-              alt="Yochai"
-            />
-            <div class="ms-2">
-              <h2 class="fw-bold">SohYeong Noh</h2>
-              <p class="text-primary fst-italic">
-                Director of Art Centre Nabi and a board member of CC Korea
-              </p>
-              <p>
-                As the Main venue for new media art production in Korea, Nabi
-                promotes cross-disciplinary collaboration and understanding
-                among science technology, humanities, and the arts.
-              </p>
+            <div class="d-flex">
+              <img
+                class="me-3"
+                src="/images/speakers-pics/checkered_business-hindi-man-1.png"
+                alt="Yochai"
+              />
+              <div class="ms-2">
+                <h2 class="fw-bold">SohYeong Noh</h2>
+                <p class="text-primary fst-italic">
+                  Director of Art Centre Nabi and a board member of CC Korea
+                </p>
+                <p>
+                  As the Main venue for new media art production in Korea, Nabi
+                  promotes cross-disciplinary collaboration and understanding
+                  among science technology, humanities, and the arts.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="d-flex">
-            <img
-              class=""
-              src="/images/speakers-pics/Checkered_guestSpeaker.png"
-              alt="Yochai"
-            />
-            <div class="ms-2">
-              <h2 class="fw-bold">Lila Tretikov</h2>
-              <p class="text-primary fst-italic">
-                Executive Director of the Wikimedia Foundation
-              </p>
-              <p>
-                Lila Tretikov is the Executive Director of the Wikimedia
-                Foundation, the nonprofit organization that operates Wikipedia.
-                Wikipedia is freely available in 290 languages and used by
-                nearly half a billion people around the world every month.
-              </p>
+            <div class="d-flex">
+              <img
+                class="me-3"
+                src="/images/speakers-pics/Checkered_guestSpeaker.png"
+                alt="Yochai"
+              />
+              <div class="ms-2">
+                <h2 class="fw-bold">Lila Tretikov</h2>
+                <p class="text-primary fst-italic">
+                  Executive Director of the Wikimedia Foundation
+                </p>
+                <p>
+                  Lila Tretikov is the Executive Director of the Wikimedia
+                  Foundation, the nonprofit organization that operates
+                  Wikipedia. Wikipedia is freely available in 290 languages and
+                  used by nearly half a billion people around the world every
+                  month.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="d-flex">
-            <img
-              class=""
-              src="/images/speakers-pics/checkered_business-man-2.png"
-              alt="Yochai"
-            />
-            <div class="ms-2">
-              <h2 class="fw-bold">Kilnam Chon</h2>
-              <p class="text-primary fst-italic">
-                KAIST Professor Emeritus and Keio University's Professor
-              </p>
-              <p>
-                Kilnam Chon helped bring the internet to Asia and is an
-                outspoken advocate for the open Web and digital commons. in
-                2012, he was inducted into the inaugural class of the Internet
-                Society's (ISOC) Interner Hall of Fame.
-              </p>
+            <div class="d-flex">
+              <img
+                class="me-3"
+                src="/images/speakers-pics/checkered_business-man-2.png"
+                alt="Yochai"
+              />
+              <div class="ms-2">
+                <h2 class="fw-bold">Kilnam Chon</h2>
+                <p class="text-primary fst-italic">
+                  KAIST Professor Emeritus and Keio University's Professor
+                </p>
+                <p>
+                  Kilnam Chon helped bring the internet to Asia and is an
+                  outspoken advocate for the open Web and digital commons. in
+                  2012, he was inducted into the inaugural class of the Internet
+                  Society's (ISOC) Interner Hall of Fame.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <!-- Partners Section -->
-      <section class="bg-dark">
+      <section id="partners" class="bg-dark">
         <div class="container">
           <h1 class="text-center text-secondary py-3">Partners</h1>
           <ul
             class="list-unstyled pb-3 text-secondary d-flex flex-wrap justify-content-center align-items-center gap-4"
           >
-            <li>Mozilla</li>
+            <li class="fw-bold">Mozilla</li>
             <li>Google</li>
             <li>NAVER</li>
             <li>Daumkakao</li>
-            <li>airbnb</li>
+            <li><img src="/images/airbnb-brands.svg" alt="" /> airbnb</li>
           </ul>
         </div>
       </section>

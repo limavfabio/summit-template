@@ -16,12 +16,20 @@ $dark: #272a31;
 
 // Custom classes
 
+// Custom classes for navbar
+
+@media screen and (min-width: 768px) {
+  nav div > a {
+    flex-direction: row;
+  }
+}
+
 // #hero background image
 
 #hero {
   .background {
     background-image: url("../images/Background.png");
-    filter: grayscale(80%) opacity(0.15);
+    filter: grayscale(20%) opacity(0.15) blur(2px);
     position: absolute;
     z-index: -1;
     background-size: cover;
@@ -38,8 +46,13 @@ $dark: #272a31;
 
 // Custom Classes for the Programmation Section
 
+#program {
+  background-image: url("../images/black-background");
+}
+
 div.program-card {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(121, 121, 121, 0.15);
+  backdrop-filter: blur(6px);
   display: flex;
   gap: 1em;
   align-items: center;
@@ -53,17 +66,49 @@ div.program-card {
 }
 
 i {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 #program button {
   border-radius: 0;
 }
 
+@media screen and (min-width: 768px) {
+  div.program-card {
+    max-width: 200px;
+    margin-top: 16px;
+  }
+}
+
 // Custom Classes for the Featured Speakers section
+
+@media screen and (min-width: 768px) {
+  #speakers {
+    .speaker-card-wrapper {
+      display: flex;
+      column-gap: 1.5em;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    p {
+      max-width: 330px;
+    }
+  }
+}
 
 #speakers img {
   width: 170px;
   height: 170px;
   object-fit: cover;
+}
+
+// Custom Classes for the Partners section
+
+#partners {
+  li img {
+    width: 2em;
+  }
+  li:nth-child(3) {
+    font-weight: 900;
+  }
 }
