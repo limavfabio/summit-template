@@ -1,17 +1,49 @@
 // Import Bootstrap Functions
 @import "../node_modules/bootstrap/scss/_functions.scss";
-// Import Bootstrap Variables
-// @import "../node_modules/bootstrap/scss/variables";
 
 // Custom Variables
-$primary:       #ec5242;
+$primary: #ec5242;
 // $secondary:     $gray-600 !default;
 // $success:       $green !default;
 // $info:          $cyan !default;
 // $warning:       $yellow !default;
 // $danger:        $red !default;
 // $light:         $gray-100 !default;
-$dark:          #272a31;
+$dark: #272a31;
 
 // Import Bootstrap
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Custom classes
+div.program-card {
+  background-color: rgba(255, 255, 255, 0.15);
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  padding: 0.5em 1em;
+  p {
+    margin-left: auto;
+  }
+  h2 {
+    min-width: 150px;
+  }
+}
+
+i {
+  font-size: 1.5em;
+}
+
+// Custom Classes for the Programmation Section
+
+#program button {
+    border-radius: 0;
+
+}
+
+// Custom Classes for the Featured Speakers section
+
+#speakers img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+}
