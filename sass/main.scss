@@ -15,6 +15,29 @@ $dark: #272a31;
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 // Custom classes
+
+// #hero background image
+
+#hero {
+  .background {
+    background-image: url("../images/Background.png");
+    filter: grayscale(80%) opacity(0.15);
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+  }
+  p:nth-child(3) {
+    backdrop-filter: blur(5px);
+    max-width: 500px;
+  }
+}
+
+// Custom Classes for the Programmation Section
+
 div.program-card {
   background-color: rgba(255, 255, 255, 0.15);
   display: flex;
@@ -33,17 +56,14 @@ i {
   font-size: 1.5em;
 }
 
-// Custom Classes for the Programmation Section
-
 #program button {
-    border-radius: 0;
-
+  border-radius: 0;
 }
 
 // Custom Classes for the Featured Speakers section
 
 #speakers img {
-    width: 170px;
-    height: 170px;
-    object-fit: cover;
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
 }
