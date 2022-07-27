@@ -16,7 +16,37 @@ $dark: #272a31;
 
 // Custom classes
 
+// Custom classes for the whole site
+body {
+  font-family: lato, sans-serif;
+}
+
+h1 {
+  color: rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (min-width: 768px) {
+  .w-md-75 {
+    max-width: 75%;
+  }
+}
+
+h1 {
+  font-family: cocogoose, sans-serif;
+}
+
 // Custom classes for navbar
+
+nav {
+  img {
+    width: 35px;
+  }
+  .active {
+    color: $primary !important;
+  }
+}
 
 @media screen and (min-width: 768px) {
   nav div > a {
@@ -109,6 +139,58 @@ i {
     width: 2em;
   }
   li:nth-child(3) {
-    font-weight: 900;
+    font-family: cocogoose, sans-serif;
   }
+  li:nth-child(2) {
+    font-size: large;
+  }
+}
+
+// Homepage Footer
+
+footer img {
+  height: 50px;
+}
+
+footer {
+  height: 100px;
+}
+
+// Custom Classes for about page
+
+// About main Section
+
+#about {
+  background-image: url("../images/about_bg_01.png");
+  p {
+    backdrop-filter: blur(5px) brightness(150%);
+  }
+  div div:nth-child(4) {
+    backdrop-filter: brightness(3) blur(3px);
+  }
+  div div:nth-child(3) {
+    backdrop-filter: brightness(3) blur(3px);
+  }
+}
+
+// Past summits
+
+.about-card-wrapper {
+  width: 350px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-card-wrapper:nth-child(1) {
+  background-image: url("../images/Fedora-gathering.jpg");
+}
+
+.about-card-wrapper:nth-child(2) {
+  background-image: url("../images/Charles-and-May.jpg");
+}
+
+@media screen and (min-width: 768px) {
 }

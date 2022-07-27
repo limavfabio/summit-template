@@ -10,12 +10,21 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
+    <link href="https://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
-      <nav class="navbar navbar-expand-md bg-light">
+      <nav class="shadow navbar navbar-expand-md bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand d-none d-md-block" href="#">Navbar</a>
+          <a class="navbar-brand ps-5 d-none d-md-block" href="#"
+            ><img src="images/CCGSlogo.png" alt=""
+          /></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -29,24 +38,26 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">About</a>
-              <a class="nav-link" href="#">Program</a>
-              <a class="nav-link" href="#">Join</a>
-              <a class="nav-link" href="#">Sponsor</a>
-              <a class="nav-link" href="#">News</a>
+              <a class="nav-link px-4 active" aria-current="page" href="#"
+                >Home</a
+              >
+              <a class="nav-link px-4" href="/about.html">About</a>
+              <a class="nav-link px-4" href="#">Program</a>
+              <a class="nav-link px-4" href="#">Join</a>
+              <a class="nav-link px-4" href="#">Sponsor</a>
+              <a class="nav-link px-4" href="#">News</a>
             </div>
           </div>
         </div>
       </nav>
       <!-- Hero section -->
-      <section id="hero" class="my-0">
+      <section id="hero" class="my-0 pb-5">
         <div class="background"></div>
         <div class="container">
           <h3 class="text-primary fw-normal display-5 pt-3">
             "Hello Sharing World"
           </h3>
-          <h1 class="text-primary display-2 fw-bold">
+          <h1 class="text-primary display-2">
             Creative Common<br />Global Summit<br />2015
           </h1>
           <p class="border border-3 border-white p-2">
@@ -54,14 +65,18 @@
             creating a positive change with people from over 80 countries is
             taking place in October, in Korea.
           </p>
-          <p class="h1 fw-bold">2015.10.15(THU) ~ 16(FRI)</p>
+          <p class="h1">2015.10.15(THU) ~ 16(FRI)</p>
           <p class="">@National Museum of Korea, Art Center Nabi and more</p>
         </div>
       </section>
       <!-- Programmation Section -->
       <section id="program" class="bg-dark">
-        <h1 class="text-center text-light pt-4">Main Program</h1>
-        <div class="container flex-wrap d-flex flex-md-row flex-column gap-2">
+        <h2 class="display-5 fw-bold text-center text-light pt-4">
+          Main Program
+        </h2>
+        <div
+          class="container flex-wrap justify-content-center d-flex flex-md-row flex-column gap-2"
+        >
           <div class="program-card d-flex flex-md-column text-light mt-3">
             <i class="bi bi-chat-right-text"></i>
             <h2 class="text-primary">Lecture</h2>
@@ -213,7 +228,7 @@
       <!-- Partners Section -->
       <section id="partners" class="bg-dark">
         <div class="container">
-          <h1 class="text-center text-secondary py-3">Partners</h1>
+          <h2 class="fw-bold text-center text-secondary py-3">Partners</h2>
           <ul
             class="list-unstyled pb-3 text-secondary d-flex flex-wrap justify-content-center align-items-center gap-4"
           >
@@ -225,6 +240,19 @@
           </ul>
         </div>
       </section>
+      <!-- Footer Section -->
+      <footer
+        class="d-flex justify-content-center align-items-center container"
+      >
+        <img
+          src="images/CreativeCommons_logo_trademark.svg"
+          alt="CC trademark logo"
+        />
+        <p class="ps-3 mb-0">
+          2022 Creative Commons.br <br />
+          Some Rights Reserved.
+        </p>
+      </footer>
       <!-- Bootstrap Scripts -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     </main>

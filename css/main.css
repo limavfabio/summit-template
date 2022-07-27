@@ -10758,6 +10758,31 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  font-family: lato, sans-serif;
+}
+
+h1, .h1 {
+  color: rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (min-width: 768px) {
+  .w-md-75 {
+    max-width: 75%;
+  }
+}
+h1, .h1 {
+  font-family: cocogoose, sans-serif;
+}
+
+nav img {
+  width: 35px;
+}
+nav .active {
+  color: #ec5242 !important;
+}
+
 @media screen and (min-width: 768px) {
   nav div > a {
     flex-direction: row;
@@ -10833,7 +10858,48 @@ i {
   width: 2em;
 }
 #partners li:nth-child(3) {
-  font-weight: 900;
+  font-family: cocogoose, sans-serif;
+}
+#partners li:nth-child(2) {
+  font-size: large;
+}
+
+footer img {
+  height: 50px;
+}
+
+footer {
+  height: 100px;
+}
+
+#about {
+  background-image: url("../images/about_bg_01.png");
+}
+#about p {
+  backdrop-filter: blur(5px) brightness(150%);
+}
+#about div div:nth-child(4) {
+  backdrop-filter: brightness(3) blur(3px);
+}
+#about div div:nth-child(3) {
+  backdrop-filter: brightness(3) blur(3px);
+}
+
+.about-card-wrapper {
+  width: 350px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-card-wrapper:nth-child(1) {
+  background-image: url("../images/Fedora-gathering.jpg");
+}
+
+.about-card-wrapper:nth-child(2) {
+  background-image: url("../images/Charles-and-May.jpg");
 }
 
 /*# sourceMappingURL=main.css.map */
