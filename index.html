@@ -20,7 +20,7 @@
   </head>
   <body>
     <main>
-      <nav class="shadow navbar navbar-expand-md bg-light">
+      <nav class="shadow fixed-top navbar navbar-expand-md bg-light">
         <div class="container-fluid">
           <a class="navbar-brand ps-5 d-none d-md-block" href="#"
             ><img src="images/CCGSlogo.png" alt=""
@@ -38,14 +38,22 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-              <a class="nav-link px-4 active" aria-current="page" href="#"
+              <a
+                class="nav-link px-md-3 px-2 active"
+                aria-current="page"
+                href="#"
                 >Home</a
               >
-              <a class="nav-link px-4" href="/about.html">About</a>
-              <a class="nav-link px-4" href="#">Program</a>
-              <a class="nav-link px-4" href="#">Join</a>
-              <a class="nav-link px-4" href="#">Sponsor</a>
-              <a class="nav-link px-4" href="#">News</a>
+              <a class="nav-link px-md-3 px-2" href="/about.html">About</a>
+              <a class="nav-link px-md-3 px-2" href="#">Program</a>
+              <a class="nav-link px-md-3 px-2" href="#">Join</a>
+              <a class="nav-link px-md-3 px-2" href="#">Sponsor</a>
+              <a class="nav-link px-md-3 px-2" href="#">News</a>
+              <a
+                class="nav-link px-md-3 px-2 ms-md-5 text-primary border border-primary border-3"
+                href=""
+                >CC Campaign</a
+              >
             </div>
           </div>
         </div>
@@ -128,8 +136,8 @@
       <section id="speakers" class="pb-4">
         <div class="container d-flex flex-column gap-3">
           <h2 class="display-5 fw-bold text-center my-3">Featured Speakers</h2>
-          <div class="speaker-card-wrapper">
-            <div class="d-flex">
+          <div class="speaker-card-wrapper d-md-flex justify-content-center">
+            <!-- <div class="d-flex">
               <img
                 class="me-3"
                 src="/images/speakers-pics/checkered-blonde-man.png"
@@ -221,7 +229,7 @@
                   Society's (ISOC) Interner Hall of Fame.
                 </p>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -249,10 +257,12 @@
           alt="CC trademark logo"
         />
         <p class="ps-3 mb-0">
-          2022 Creative Commons.br <br />
+          2022 Creative Commons <br />
           Some Rights Reserved.
         </p>
       </footer>
+      <!-- My Scripts -->
+      <script src="js/main.js"></script>
       <!-- Bootstrap Scripts -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     </main>

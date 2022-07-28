@@ -19,6 +19,7 @@ $dark: #272a31;
 // Custom classes for the whole site
 body {
   font-family: lato, sans-serif;
+  margin-top: 70px;
 }
 
 h1 {
@@ -54,6 +55,10 @@ nav {
   }
 }
 
+nav div div div a {
+  max-width: max-content;
+}
+
 // #hero background image
 
 #hero {
@@ -87,6 +92,7 @@ div.program-card {
   gap: 1em;
   align-items: center;
   padding: 0.5em 1em;
+  text-align: center;
   p {
     margin-left: auto;
   }
