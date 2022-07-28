@@ -1,0 +1,287 @@
+// Import Bootstrap Functions
+@import "../node_modules/bootstrap/scss/_functions.scss";
+
+// Custom Variables
+$primary: #ec5242;
+// $secondary:     $gray-600 !default;
+// $success:       $green !default;
+// $info:          $cyan !default;
+// $warning:       $yellow !default;
+// $danger:        $red !default;
+// $light:         $gray-100 !default;
+$dark: #272a31;
+
+// Import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Custom classes
+
+// Custom classes for the whole site
+body {
+  font-family: lato, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: cocogoose, sans-serif;
+  text-shadow:
+    2px 8px 6px rgba(0, 0, 0, 0.2),
+    0 -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (min-width: 768px) {
+  .w-md-75 {
+    max-width: 75%;
+  }
+}
+
+// Custom classes for navbar
+
+nav {
+  img {
+    width: 35px;
+  }
+
+  .active {
+    color: $primary !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav div > a {
+    flex-direction: row;
+  }
+}
+
+nav div div div a {
+  max-width: max-content;
+}
+
+// Change navbar icon when open
+
+.navbar-toggler {
+  width: 20px;
+  height: 35px;
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+
+.navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+
+.toggler-icon {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #495057;
+  border-radius: 2px;
+  opacity: 1;
+  left: 6px;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.mid-bar {
+  margin-top: 0;
+}
+
+.navbar-toggler .top-bar {
+  margin-top: 0;
+  transform: rotate(135deg);
+}
+
+.navbar-toggler .mid-bar {
+  opacity: 0;
+}
+
+.navbar-toggler .bot-bar {
+  margin-top: 0;
+  transform: rotate(-135deg);
+}
+
+// State when the navbar is collapsed
+
+.navbar-toggler.collapsed .top-bar {
+  margin-top: -10px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .mid-bar {
+  opacity: 1;
+}
+
+.navbar-toggler.collapsed .bot-bar {
+  margin-top: 10px;
+  transform: rotate(0deg);
+}
+
+// #hero background image
+
+#hero {
+  .background {
+    background-image: url("../images/Background.png");
+    filter: grayscale(20%) opacity(0.15) blur(2px);
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+  }
+
+  p:nth-child(3) {
+    backdrop-filter: blur(5px);
+    max-width: 500px;
+  }
+}
+
+// Custom Classes for the Programmation Section
+
+#program {
+  background-image: url("../images/black-background");
+}
+
+div.program-card {
+  background-color: rgba(121, 121, 121, 0.15);
+  backdrop-filter: blur(6px);
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  padding: 0.5em 1em;
+  text-align: center;
+
+  p.program-card-description {
+    margin-left: auto;
+  }
+
+  h2 {
+    min-width: 150px;
+  }
+}
+
+i {
+  font-size: 2em;
+}
+
+#program button {
+  border-radius: 0;
+}
+
+@media screen and (min-width: 768px) {
+  div.program-card {
+    max-width: 200px;
+    margin-top: 16px;
+  }
+}
+
+// Custom Classes for the Featured Speakers section
+
+@media screen and (min-width: 768px) {
+  #speakers {
+    .speaker-card-wrapper {
+      display: flex;
+      column-gap: 1.5em;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    p {
+      max-width: 330px;
+    }
+  }
+}
+
+#speakers img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+}
+
+// Custom Classes for the Partners section
+
+#partners {
+  li img {
+    width: 2em;
+  }
+
+  li:nth-child(3) {
+    font-family: cocogoose, sans-serif;
+  }
+
+  li:nth-child(2) {
+    font-size: large;
+  }
+}
+
+// Homepage Footer
+
+footer img.footer-image {
+  height: 50px;
+}
+
+footer {
+  height: 100px;
+}
+
+// Custom Classes for about page
+
+// About main Section
+
+#about {
+  background-image: url("../images/about_bg_01.png");
+
+  p.border.w-md-75.p-3.text-center.border-3 {
+    backdrop-filter: blur(5px) brightness(150%);
+  }
+
+  div div:nth-child(4) {
+    backdrop-filter: brightness(3) blur(3px);
+  }
+
+  div div:nth-child(3) {
+    backdrop-filter: brightness(3) blur(3px);
+  }
+}
+
+// Logo Contest
+
+#logo-contest div img {
+  width: 100%;
+  height: auto;
+}
+
+// Past summits
+
+.about-card-wrapper {
+  width: 330px;
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-card-wrapper:nth-child(1) {
+  background-image: url("../images/Fedora-gathering.jpg");
+}
+
+.about-card-wrapper:nth-child(2) {
+  background-image: url("../images/Charles-and-May.jpg");
+}
