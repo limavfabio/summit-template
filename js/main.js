@@ -3,6 +3,22 @@ const speakerCardWrapper = document.querySelector('.speaker-card-wrapper');
 // Data Storage - Array of objects for the speakers cards
 const speakers = [
   {
+    name: 'Curt Schilling',
+    title: 'Founder of 38 Studios',
+    description:
+      'After retiring, he founded Green Monster Games, which was renamed 38 Studios. The company released Kingdoms of Amalur: Reckoning in February 2012.',
+    image: 'checkered_business-hindi-man-1.png',
+    imageAlt: 'Yochai',
+  },
+  {
+    name: 'Jennifer MacLean',
+    title: 'Executive director of the IGDA',
+    description:
+      'After beginning her career working with Brian Reynolds and Sid Meier at Microprose Software in 1992, she joined AOL in 1996, where she became Programming Director for the Games Channel.',
+    image: 'Checkered_guestSpeaker.png',
+    imageAlt: 'Jennifer',
+  },
+  {
     name: 'Yochai Benkler',
     title:
       'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
@@ -20,39 +36,21 @@ const speakers = [
     imageAlt: 'SohYeong',
   },
   {
-    name: 'Yochai Benkler',
+    name: 'Todd McFarlane',
     title:
-      'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
+      'Canadian comic book creator, artist, writer, filmmaker and entrepreneur',
     description:
-      'Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.',
-    image: 'checkered_business-hindi-man-1.png',
-    imageAlt: 'Yochai',
+      "In the late 1980s and early 1990s, McFarlane became a comic book superstar due to his work on Marvel Comics' Spider-Man franchise, on which he was the artist to draw the first full appearances of the character Venom.",
+    image: 'checkered-toddMcFar.png',
+    imageAlt: 'Todd',
   },
   {
-    name: 'Lila Tretikov',
-    title: 'Executive Director of the Wikimedia Foundation',
+    name: 'Yuzo Koshiro',
+    title: 'President of the video game development company Ancient.',
     description:
-      'Lila Tretikov is the Executive Director of the Wikimedia Foundation, the nonprofit organization that operates Wikipedia. Wikipedia is freely available in 290 languages and used by nearly half a billion people around the world every month.',
-    image: 'Checkered_guestSpeaker.png',
-    imageAlt: 'Lila',
-  },
-  {
-    name: 'Yochai Benkler',
-    title:
-      'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
-    description:
-      'Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.',
-    image: 'checkered-blonde-man.png',
-    imageAlt: 'Yochai',
-  },
-  {
-    name: 'Yochai Benkler',
-    title:
-      'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
-    description:
-      'Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.',
-    image: 'checkered-blonde-man.png',
-    imageAlt: 'Yochai',
+      'Koshiro and his sister Ayano founded the game development company Ancient in 1990.',
+    image: 'Checkered_Yuzo-Koshiro.png',
+    imageAlt: 'Yuzo',
   },
 ];
 // Speakers cards generator
