@@ -59,6 +59,78 @@ nav div div div a {
   max-width: max-content;
 }
 
+// Change navbar icon when open
+
+.navbar-toggler {
+  width: 20px;
+  height: 35px;
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+
+.navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+
+.toggler-icon {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: $secondary;
+  border-radius: 2px;
+  opacity: 1;
+  left: 6px;
+  transform: rotate(0deg);
+  transition: 0.25 ease-in-out;
+}
+
+.mid-bar {
+  margin-top: 0;
+}
+
+.navbar-toggler .top-bar {
+  margin-top: 0;
+  transform: rotate(135deg);
+}
+
+.navbar-toggler .mid-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bot-bar {
+  margin-top: 0;
+  transform: rotate(-135deg);
+}
+
+// State when the navbar is collapsed
+
+.navbar-toggler.collapsed .top-bar {
+  margin-top: -10px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .mid-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bot-bar {
+  margin-top: 10px;
+  transform: rotate(0deg);
+}
+
 // #hero background image
 
 #hero {
