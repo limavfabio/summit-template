@@ -10957,7 +10957,7 @@ footer {
   backdrop-filter: brightness(3) blur(3px);
 }
 
-#logo-contest img {
+#logo-contest div img {
   width: 100%;
   height: auto;
 }

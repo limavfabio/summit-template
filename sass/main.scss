@@ -28,7 +28,8 @@ a {
 h1 {
   color: rgba(0, 0, 0, 0.6);
   font-family: cocogoose, sans-serif;
-  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+  text-shadow:
+    2px 8px 6px rgba(0, 0, 0, 0.2),
     0 -5px 35px rgba(255, 255, 255, 0.3);
 }
 
@@ -261,7 +262,7 @@ footer {
 
 // Logo Contest
 
-#logo-contest img {
+#logo-contest div img {
   width: 100%;
   height: auto;
 }
