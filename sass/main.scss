@@ -24,8 +24,9 @@ body {
 
 h1 {
   color: rgba(0, 0, 0, 0.6);
-  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
-    0px -5px 35px rgba(255, 255, 255, 0.3);
+  text-shadow:
+    2px 8px 6px rgba(0, 0, 0, 0.2),
+    0 -5px 35px rgba(255, 255, 255, 0.3);
 }
 
 @media screen and (min-width: 768px) {
@@ -44,6 +45,7 @@ nav {
   img {
     width: 35px;
   }
+
   .active {
     color: $primary !important;
   }
@@ -145,6 +147,7 @@ nav div div div a {
     height: 100vh;
     width: 100%;
   }
+
   p:nth-child(3) {
     backdrop-filter: blur(5px);
     max-width: 500px;
@@ -165,9 +168,11 @@ div.program-card {
   align-items: center;
   padding: 0.5em 1em;
   text-align: center;
+
   p {
     margin-left: auto;
   }
+
   h2 {
     min-width: 150px;
   }
@@ -198,6 +203,7 @@ i {
       flex-direction: row;
       flex-wrap: wrap;
     }
+
     p {
       max-width: 330px;
     }
@@ -216,9 +222,11 @@ i {
   li img {
     width: 2em;
   }
+
   li:nth-child(3) {
     font-family: cocogoose, sans-serif;
   }
+
   li:nth-child(2) {
     font-size: large;
   }
@@ -240,12 +248,15 @@ footer {
 
 #about {
   background-image: url("../images/about_bg_01.png");
+
   p {
     backdrop-filter: blur(5px) brightness(150%);
   }
+
   div div:nth-child(4) {
     backdrop-filter: brightness(3) blur(3px);
   }
+
   div div:nth-child(3) {
     backdrop-filter: brightness(3) blur(3px);
   }
