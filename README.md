@@ -34,6 +34,8 @@ https://limavfabio.github.io/summit-template/index.html
 
 This website was made following the design of Cindy Shin, per the license https://creativecommons.org/licenses/by-nc/4.0/
 
+You can find her design here: https://www.behance.net/gallery/29845175/CC-Global-Summit-2015
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
