@@ -19,14 +19,16 @@ $dark: #272a31;
 // Custom classes for the whole site
 body {
   font-family: lato, sans-serif;
-  margin-top: 70px;
+}
+
+a {
+  text-decoration: none;
 }
 
 h1 {
   color: rgba(0, 0, 0, 0.6);
   font-family: cocogoose, sans-serif;
-  text-shadow:
-    2px 8px 6px rgba(0, 0, 0, 0.2),
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
     0 -5px 35px rgba(255, 255, 255, 0.3);
 }
 
@@ -257,11 +259,18 @@ footer {
   }
 }
 
+// Logo Contest
+
+#logo-contest img {
+  width: 100%;
+  height: auto;
+}
+
 // Past summits
 
 .about-card-wrapper {
-  width: 350px;
-  height: 200px;
+  width: 330px;
+  height: 190px;
   display: flex;
   justify-content: center;
   align-items: center;
