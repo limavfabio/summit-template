@@ -11,3 +11,5 @@
 #.pnp.*
 node_modules
 .vscode
+.hintrc
+.stylelintrc.json
